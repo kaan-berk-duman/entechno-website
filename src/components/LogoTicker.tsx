@@ -1,29 +1,28 @@
-import acmeLogo from "../assets/images/acme.png";
-import quantumLogo from "../assets/images/quantum.png";
-import echoLogo from "../assets/images/echo.png";
-import celestialLogo from "../assets/images/celestial.png";
-import pulseLogo from "../assets/images/pulse.png";
-import apexLogo from "../assets/images/apex.png";
+import BizimMarket from "../assets/images/client-1.png";
+import g2m from "../assets/images/client-2.png";
+import sicpa from "../assets/images/client-3.png";
+import akca from "../assets/images/client-4.png";
+import kastamonu from "../assets/images/client-5.png";
+import pysertech from "../assets/images/client-6.png";
 import Image from 'next/image';
 import LogoCarousel from "./companylogos";
 
 const images = [
-  { src: acmeLogo, alt: "Acme Logo" },
-  { src: quantumLogo, alt: "Quantum Logo" },
-  { src: echoLogo, alt: "Echo Logo" },
-  { src: celestialLogo, alt: "Celestial Logo" },
-  { src: pulseLogo, alt: "Pulse Logo" },
-  { src: apexLogo, alt: "Apex Logo" },
+  { src: BizimMarket, alt: "BizimMarket" },
+  { src: g2m, alt: "g2m" },
+  { src: sicpa, alt: "sicpa" },
+  { src: akca, alt: "akca" },
+  { src: kastamonu, alt: "kastamonu" },
+  { src: pysertech, alt: "pysertech" },
 ];
 
 export const LogoTicker = () => {
-  return(
-    <div className="py-[72px] sm:py-24">
-      <div className="container">
-        <h2 className="text-lg text-center mb-16">Trusted by world&apos;s most innovative teams</h2>
-        <LogoCarousel/>
+  return (
+    <div className="relative">
+      <div className="container py-24 px-28">
+        <LogoCarousel />
       </div>
-
     </div>
+
   )
 };
